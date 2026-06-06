@@ -1,15 +1,10 @@
-<div align="center">
-
 # QAI Agent
 
 无需繁重的AI框架，快速验证你的所有想法
 
-</div>
-<br>
-
 ## 项目简介
 
-QAI Agent是一款轻量级 Java AI Agent 框架，包含智能体基础核心能力，可以快速接入、灵活定制智能体应用。
+QAI Agent是一款轻量级 Java AI Agent 框架，实现最基础核心能力，可以快速接入、灵活定制智能体应用。
 
 ### 特性：
 - **动态加载**：全局单例配置，支持运行时动态变更
@@ -466,87 +461,7 @@ public class AdvancedStreamHandler extends StreamEventHandler {
         System.out.println("数据: " + data);
     }
     
-    @Override
-    public void onComment(String comment) {
-        // 处理注释
-    }
-    
-    @Override
-    public void onComplete() {
-        // 流式传输完成
-        System.out.println("流式传输完成");
-    }
-    
-    @Override
-    public void onError(Throwable t) {
-        // 错误处理
-        t.printStackTrace();
-    }    
-    
-    @Override
-    public CountDownLatch getCountDownLatch() {
-        return new CountDownLatch(1);
-    }
-    
-    @Override
-    public boolean needToolCall() {
-        return false;
-    }
-    
-    @Override
-    public String getCurrStr() {
-        return "";
-    }
-    
-    @Override
-    public String getCurrData() {
-        return "";
-    }
-    
-    @Override
-    public boolean isReasoning() {
-        return false;
-    }
-    
-    @Override
-    public boolean isChatAnswer() {
-        return true;
-    }
-    
-    @Override
-    public StringBuilder getReasoningOutput() {
-        return new StringBuilder();
-    }
-    
-    @Override
-    public StringBuilder getAnswerOutput() {
-        return new StringBuilder();
-    }
-    
-    @Override
-    public List<ToolCall> getToolCalls() {
-        return null;
-    }
-    
-    @Override
-    public void onEvent(String eventType, String data, String id) {
-        // 处理事件
-    }
-    
-    @Override
-    public void onComment(String comment) {
-        // 处理注释
-    }
-    
-    @Override
-    public void onComplete() {
-        // 完成处理
-    }
-    
-    @Override
-    public void onError(Throwable t) {
-        // 错误处理
-    }
+    ...
 }
 ```
 
